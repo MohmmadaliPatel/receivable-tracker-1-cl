@@ -1,6 +1,7 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
   "/api/admin/audit-logs/route": "app/api/admin/audit-logs/route.js",
+  "/api/admin/log-files/route": "app/api/admin/log-files/route.js",
   "/api/admin/truncate-data/route": "app/api/admin/truncate-data/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/auth/change-password/route": "app/api/auth/change-password/route.js",
