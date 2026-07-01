@@ -83,6 +83,7 @@
   "/forwarded-emails/page": "/forwarded-emails",
   "/forwarders/page": "/forwarders",
   "/forwarding-rules/page": "/forwarding-rules",
+  "/license-expired/page": "/license-expired",
   "/listing-uploads/page": "/listing-uploads",
   "/login/page": "/login",
   "/masters/email-templates/page": "/masters/email-templates",

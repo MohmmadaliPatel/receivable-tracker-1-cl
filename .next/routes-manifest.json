@@ -356,6 +356,12 @@
       "namedRegex": "^/forwarding\\-rules(?:/)?$"
     },
     {
+      "page": "/license-expired",
+      "regex": "^/license\\-expired(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/license\\-expired(?:/)?$"
+    },
+    {
       "page": "/listing-uploads",
       "regex": "^/listing\\-uploads(?:/)?$",
       "routeKeys": {},

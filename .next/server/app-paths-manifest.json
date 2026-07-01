@@ -83,6 +83,7 @@
   "/forwarded-emails/page": "app/forwarded-emails/page.js",
   "/forwarders/page": "app/forwarders/page.js",
   "/forwarding-rules/page": "app/forwarding-rules/page.js",
+  "/license-expired/page": "app/license-expired/page.js",
   "/listing-uploads/page": "app/listing-uploads/page.js",
   "/login/page": "app/login/page.js",
   "/masters/email-templates/page": "app/masters/email-templates/page.js",

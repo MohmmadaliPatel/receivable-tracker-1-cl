@@ -30,6 +30,54 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/bulk-email": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/bulk-email",
+      "dataRoute": "/bulk-email.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/supplier-master": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/supplier-master",
+      "dataRoute": "/supplier-master.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/_not-found": {
       "initialStatus": 404,
       "experimentalBypassFor": [
@@ -79,30 +127,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/listing-uploads": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/listing-uploads",
-      "dataRoute": "/listing-uploads.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/vendor-master": {
       "experimentalBypassFor": [
         {
@@ -127,7 +151,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/supplier-master": {
+    "/listing-uploads": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -140,8 +164,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/supplier-master",
-      "dataRoute": "/supplier-master.rsc",
+      "srcRoute": "/listing-uploads",
+      "dataRoute": "/listing-uploads.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -175,7 +199,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/respond/msme/upload": {
+    "/login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -188,8 +212,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/respond/msme/upload",
-      "dataRoute": "/respond/msme/upload.rsc",
+      "srcRoute": "/login",
+      "dataRoute": "/login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -223,6 +247,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/respond/msme/upload": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/respond/msme/upload",
+      "dataRoute": "/respond/msme/upload.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/respond/trade/query": {
       "experimentalBypassFor": [
         {
@@ -246,61 +294,13 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
-    },
-    "/login": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/login",
-      "dataRoute": "/login.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/bulk-email": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/bulk-email",
-      "dataRoute": "/bulk-email.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "249d4a68a9b032e433b3d9817deca33d",
-    "previewModeSigningKey": "d5ed28ded1e6176b0630796d0d6f75190e9b019b52aebcfe93d35833afc23fba",
-    "previewModeEncryptionKey": "53e400612dcac62198be5a40338cfb1ef5f46164a4dd0c2e59771ab1eb557e63"
+    "previewModeId": "993525988f30e967feef5d626c793dca",
+    "previewModeSigningKey": "5a84d538bebc6b3de6c552d190357955b41823a30d21a4727ae58b2f6000ef8d",
+    "previewModeEncryptionKey": "4cb1086c0e28c031fa76d419e70c5e8dd1df87e1ec36430b462b066194ce8bcf"
   }
 }
